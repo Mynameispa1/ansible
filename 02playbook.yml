@@ -1,0 +1,14 @@
+---
+- name: Install git and start
+  hosts: web
+  become: root
+  tasks:
+    - name: Install git
+      yum:
+        name: git
+        state: present
+    - name: start git
+      service:
+        name: git
+        state: started
+  
