@@ -1,14 +1,14 @@
 ---
-- name: Install git and start
+- name: Install nginx and start
   hosts: web
   become: yes
   tasks:
-    - name: Install git
+    - name: Install nginx
       yum:
-        name: git
+        name: nginx
         state: present
-    - name: Start service git, if not started
+    - name: Start service nginx, if not started
       service:
-       name: git
+       name: nginx
        state: started
   
