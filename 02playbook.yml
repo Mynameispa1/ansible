@@ -8,7 +8,7 @@
         name: git
         state: present
     - name: start git
-      service:
+      ansible.builtin.package:
         name: git
         state: started
   
