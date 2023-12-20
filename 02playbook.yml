@@ -1,7 +1,7 @@
 ---
 - name: Install git and start
   hosts: web
-  become: root
+  become: yes
   tasks:
     - name: Install git
       yum:
