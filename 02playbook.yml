@@ -9,6 +9,6 @@
         state: present
     - name: Start service git, if not started
       service:
-      name: git
-      state: started
+       name: git
+       state: started
   
