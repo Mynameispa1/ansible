@@ -7,7 +7,7 @@
       yum:
         name: nginx
         state: present
-    - name: Start service nginx, if not started
+    - name: Start service nginx
       service:
        name: nginx
        state: started
