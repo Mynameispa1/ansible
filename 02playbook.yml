@@ -7,8 +7,8 @@
       yum:
         name: git
         state: present
-    - name: start git
-      ansible.builtin.package:
-        name: git
-        state: started
+    - name: Start service git, if not started
+      service:
+      name: git
+      state: started
   
