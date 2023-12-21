@@ -4,7 +4,7 @@
 localhost
 
 [localhost:vars]
-course="Devops"
+course="devops"
 trainer="pavan"
 duration="110Hrs"
 name="pavan from inventory"

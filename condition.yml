@@ -7,4 +7,4 @@
     register: user #user is variable hear #to grab the output we use register
   - name: print user
     ansible.builtin.debug:
-     msg: "user output is {{user}}"
+     msg: "user output is: {{user}}"
