@@ -9,7 +9,7 @@
   tasks:
   - name: check varaibles
     vars:
-    name: "pavan from task"
-    class: "devops from task"
+     name: "pavan from task"
+     class: "devops from task"
     ansible.builtin.debug:
      msg: "Good Morning {{name}}, welcome to {{class}}"
