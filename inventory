@@ -1,5 +1,4 @@
-192.24.68.29
-192.24.68.30
+
 
 [loclhost]
 localhost
@@ -7,7 +6,10 @@ localhost
 [localhost:vars]
 course="Devops"
 trainer="pavan"
-duration="duration"
+duration="110Hrs"
+
+192.24.68.29
+192.24.68.30
 
 [web]
 54.167.12.59
