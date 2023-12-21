@@ -1,6 +1,14 @@
 192.24.68.29
 192.24.68.30
 
+[loclhost]
+localhost
+
+[localhost:vars]
+course="Devops"
+trainer="pavan"
+duration="duration"
+
 [web]
 54.167.12.59
 
