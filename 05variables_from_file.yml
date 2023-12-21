@@ -1,0 +1,10 @@
+---
+- name: "Calling variables which is defined in other file"
+  hosts: localhost
+  vars_files:
+   - variables.yml
+  tasks:
+   - name: "variables"
+     ansible.inbuilt.debug:
+      msg: "Hi, I am learing {{course}}, tariner is {{trainer}}, duration is {{duration}}"
+
