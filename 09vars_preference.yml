@@ -1,0 +1,15 @@
+---
+- name: "Checking varaible preference"
+  hosts: localhost
+  vars_files:
+   - variables.yml
+  vars:
+   name: "pavan from play"
+   class: "devops from play"
+  tasks:
+  - name: check varaibles
+    vars:
+    name: "pavan from task"
+    class: "devops from task"
+    ansible.builtin.debug:
+     msg: "Good Morning {{name}}, welcome to {{class}}"
