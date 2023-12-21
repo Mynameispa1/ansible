@@ -1,0 +1,7 @@
+---
+- name: "Passing values to the variable from command line arguments"
+  hosts: localhost
+  tasks:
+  - name: chcek variables
+    ansible.builtin.debug:
+     msg: "Good Morning {{name}}, welcome to {{class}}"
