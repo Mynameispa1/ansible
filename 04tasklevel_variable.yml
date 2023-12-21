@@ -1,12 +1,12 @@
 ---
-- name: "Task level variable declaration"
+- name: Task level variable declaration
   hosts: localhost
   vars:
    course: devops
    trainer: pavan
    duration: 110Hrs
   tasks:
-  - name: "task level variable"
+  - name: task level variable
     vars:
      trainer: "Pavan Kumar Muvva"
      ansible.builtin.debug:
