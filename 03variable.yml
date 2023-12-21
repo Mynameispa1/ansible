@@ -1,5 +1,5 @@
 ---
-- name: "this is play1"
+- name: "variable form play level"
   hosts: localhost
   vars:
    course: "Devops"
