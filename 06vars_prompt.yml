@@ -1,5 +1,5 @@
 ---
-- name: ""Variable from prompt
+- name: "Variable from prompt"
   hosts: localhost
   vars_prompt:
   - name: USERNAME
