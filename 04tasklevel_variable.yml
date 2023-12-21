@@ -10,4 +10,4 @@
     vars:
      trainer: "Pavan Kumar Muvva"
      ansible.builtin.debug:
-       msg: "Hi, I am learning devops, trainer is pavan, duration is 110Hrs"
+       msg: "Hi, I am learning {{course}}, trainer is {{trainer}}, duration is {{durations}}"
