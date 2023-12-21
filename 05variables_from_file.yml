@@ -5,6 +5,6 @@
    - variables.yml
   tasks:
    - name: "variables"
-     ansible.inbuilt.debug:
+     ansible.builtin.debug:
       msg: "Hi, I am learing {{course}}, tariner is {{trainer}}, duration is {{duration}}"
 
