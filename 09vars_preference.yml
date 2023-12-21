@@ -1,8 +1,8 @@
 ---
 - name: "Checking varaible preference"
   hosts: localhost
-  vars_files:
-   - variables.yml
+  # vars_files:
+  #  - variables.yml
   # vars:
   #  name: "pavan from play"
   #  class: "devops from play"
