@@ -8,8 +8,8 @@
      name: "{{item}}""
      state: present
     loop:
-     - git
-     - mysql
-     - nginx
-     - ansible
+    - git
+    - mysql
+    - nginx
+    - ansible
      
