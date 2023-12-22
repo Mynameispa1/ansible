@@ -1,0 +1,15 @@
+---
+- name: Install package using loop function
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Install package
+    ansible.builtin.package:
+     name: "{{list}}""
+     state: present
+     loop:
+     - git
+     - mysql
+     - nginx
+     - ansible
+     
