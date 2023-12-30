@@ -10,7 +10,7 @@
 
   - name: untar the file
     ansible.builtin.unarchive:
-     src: /tmp/https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.tar.gz
+     src: /tmp/apache-tomcat-9.0.84.tar.gz
      dest: /home/centos
      remote_src: yes
 
