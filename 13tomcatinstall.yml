@@ -17,4 +17,4 @@
   - name: start tomcat
     ansible.builtin.service:
      name: tomcat
-     state: present
+     state: started
