@@ -5,11 +5,12 @@
   tasks:
   - name: Install package
     ansible.builtin.package:
-     name: "{{item}}"
+     name: "{{item}}" #this is default keyword
      state: present
     loop:
     - git
     - mysql
     - nginx
     - ansible
+    - tomcat
      
