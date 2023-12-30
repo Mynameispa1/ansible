@@ -1,0 +1,20 @@
+---
+- name: Install Tomcat
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: download tar file
+    ansible.builtin.get_url:
+     url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.tar.gz
+     dest: /tmp
+
+  - name: untar the file
+    ansible.builtin.unarchive:
+     src: /tmp/https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.tar.gz
+     dest: /home/centos
+
+  - name: start tomcat
+    ansible.builtin.service:
+     name: tomcat
+     state: present
+           
